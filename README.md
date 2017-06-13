@@ -53,7 +53,7 @@ patterns used in this talk, the containing object is what `this` refers to.
 {
   foo: 'bar',
   baz: function () {
-    return this.foo;
+    return this.foo
   }
 }
 ```
