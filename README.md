@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
--   [js-objects-modeling](https://github.com/ga-wdi-boston/js-objects-modeling)
+-   [js-objects-modeling](https://git.generalassemb.ly/ga-wdi-boston/js-objects-modeling)
 
 ## Objectives
 
@@ -13,7 +13,7 @@
 
 ## Preparation
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 1.  Create a new branch, `training`, for your work.
 1.  Checkout to the `training` branch.
