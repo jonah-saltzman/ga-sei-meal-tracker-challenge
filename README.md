@@ -96,7 +96,7 @@ Using the description of the program above, create an entity diagram.
 ## Demo: Write Methods With `this`
 
 ```js
-let user = {
+const user = {
   name: "Person McFace",
   email: "wdi@personmcface.com",
   runs : [
