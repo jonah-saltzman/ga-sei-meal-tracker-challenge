@@ -126,9 +126,12 @@ const user = {
 
 ## Lab: Self-Referential Objects
 
-In groups, you're going to work on a similar program to our previous one, this
-time for meal tracking. In particular, you're going to create an example 'User'
-object, complete with several 'Meals'.
+In teams, you're going to work on a similar program to our previous one, this
+time for meal tracking. In particular, you're going to create a 'User' object,
+complete with several 'Meals'.
+
+Add your code to [`lib/meals.js`](lib/meals.js), structured similarly to
+[`lib/runs.js`](lib/runs.js).
 
 A 'User' needs to have:
 
@@ -140,7 +143,7 @@ A 'User' needs to have:
 Every 'Meal' must have:
 
 - a title (`title`), e.g. 'breakfast', 'lunch', 'dinner'
-- a date (`date`), represented as a string e.g. "2016-06-25"
+- a date (`date`), represented as a string e.g. '2016-06-25'
 - a description (`description`)
 - a number of estimated calories (`calories`)
 
@@ -153,9 +156,6 @@ Then, create the following methods for your instance of a 'User':
 - `onTrack`, which compares averageDailyCalories to the User's target daily
     calorie intake, and returns `true` if average caloric intake is at or below
     the target (or `false` if the reverse is true).
-
-Add your code to [`lib/meals.js`](lib/meals.js), structured similarly to
-[`lib/runs.js`](lib/runs.js).
 
 ## Additional Resources
 
