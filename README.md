@@ -97,24 +97,23 @@ Using the description of the program above, create an entity diagram.
 
 ```js
 const user = {
-  name: "Christopher Robin",
-  email: "wdi@christopherRobin.com",
-  runs : [
+  name: 'Christopher Robin',
+  email: 'wdi@christopherRobin.com',
+  runs: [
     {
-      date: "2016-05-25 15:00",
+      date: '2017-05-25 15:00',
       distance: 1200,
       timeTaken: 600
     },
     {
-      date: "2016-05-25 15:00",
+      date: '2017-05-25 15:00',
       distance: 1400,
       timeTaken: 800
     }
   ],
-
-  totalDistance : function () {},
-  longestRunDistance : function () {},
-  averageSpeed : function () {}
+  totalDistance: function () {},
+  longestRunDistance: function () {},
+  averageSpeed: function () {}
 }
 ```
 
