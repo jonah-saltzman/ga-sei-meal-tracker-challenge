@@ -4,20 +4,20 @@
 
 ## Prerequisites
 
--   [js-objects-modeling](https://git.generalassemb.ly/ga-wdi-boston/js-objects-modeling)
+- [js-object-modeling](https://git.generalassemb.ly/ga-wdi-boston/js-object-modeling)
 
 ## Objectives
 
--   Contrast the defintions of "property", "attribute", and "method"
--   From within a method, access properties of the same object using `this`.
+- Contrast the definitions of "property", "attribute", and "method".
+- Access properties within a method of the same object using `this`.
 
 ## Preparation
 
-1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
+1. [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
-1.  Create a new branch, `training`, for your work.
-1.  Checkout to the `training` branch.
-1.  Install dependencies with `npm install`.
+1. Create a new branch, `training`, for your work.
+1. Checkout to the `training` branch.
+1. Install dependencies with `npm install`.
 
 ## Kinds of Properties
 
@@ -74,98 +74,97 @@ Suppose that we wanted to create a simple program ('RunTracker') that helps
 people prepare for running a 5k. Each day that a person runs, they create a
 record of their run which contains:
 
--   the date and time of the run
--   the distance covered, in meters
--   the time taken, in seconds
+- the date and time of the run
+- the distance covered, in meters
+- the time taken, in seconds
 
 The program also stores information about the user (the user's name and email
-address) and can perform some calculations (total distance run, longest run
-so far, and average speed).
+address) and can perform some calculations (total distance run, longest distance
+run so far, and average speed).
 
 ## Lab: Diagram and Model
 
 Using the description of the program above, create an entity diagram.
 
-1.  Identify the entities (kinds of objects) needed in the program.
-1.  Draw a box for each entity and label it with the singular, capitalized
+1. Identify the entities (kinds of objects) needed in the program.
+1. Draw a box for each entity and label it with the singular, capitalized
     entity name.
-1.  Connect any entities that are related using a line.
-1.  List attributes and methods of each entity separately within each entity's
+1. Connect any entities that are related using a line.
+1. List attributes and methods of each entity separately within each entity's
     box.
 
 ## Demo: Write Methods With `this`
 
+When we start thinking about how the methods for 'User' will work, we run into a
+difficulty. A method for calculating the longest distance run so far needs to be
+able to access, and refer to, all of the runs associated with that particular
+user. How do we do that?
+
+Watch as I demonstrate how to complete writing each method.
+
 ```js
 const user = {
-  name: "Person McFace",
-  email: "wdi@personmcface.com",
-  runs : [
+  name: 'Christopher Robin',
+  email: 'wdi@christopherRobin.com',
+  runs: [
     {
-      date: "2016-05-25 15:00",
+      date: '2017-05-25 15:00',
       distance: 1200,
       timeTaken: 600
     },
     {
-      date: "2016-05-25 15:00",
+      date: '2017-05-25 15:00',
       distance: 1400,
       timeTaken: 800
     }
   ],
-
-  totalDistance : function () {},
-  longestRun : function () {},
-  averageSpeed : function () {}
+  totalDistance: function () {},
+  longestRunDistance: function () {},
+  averageSpeed: function () {}
 }
 ```
 
-When we start thinking about how the methods for 'User' will work, we run into a
-difficulty. A method for calculating the longest run so far needs to be able to
-see, and refer to, all of the runs associated with that particular user. How do
-we do that?
-
-Follow along as I demonstrate how to complete writing each method.
-
 ## Lab: Self-Referential Objects
 
-In groups, you're going to work on a similar program to our previous one, this
-time for meal tracking. In particular, you're going to create an example 'User'
-object, complete with several 'Meals'.
-
-A 'User' needs to have:
-
--   a name (`name`)
--   a date-of-birth (`bornOn`)
--   a target daily calorie intake (`calorieTarget`)
--   a list of 'Meals' that they've eaten (`meals`)
-
-Every 'Meal' must have:
-
--   a title (`title`), e.g. 'breakfast', 'lunch', 'dinner'
--   a date (`date`), represented as a string e.g. "2016-06-25"
--   a description (`description`)
--   a number of estimated calories (`calories`)
-
-Then, create the following methods for your instance of a 'User':
-
--   `caloriesEatenOn`, which accepts a date (in the format above) and calculates
-    the total number of calories consumed on that date.
--   `avgDailyCalories`, which (as indicated), calculates the average number of
-    calories consumed per day, rounded down to the nearest whole calorie.
--   `onTrack`, which compares averageDailyCalories to the User's target daily
-    calorie intake, and returns `true` if average caloric intake is at or below
-    the target (or `false` if the reverse is true).
+In teams, you're going to work on a similar program to our previous one, this
+time for meal tracking. In particular, you're going to create a 'User' object,
+complete with several 'Meals'.
 
 Add your code to [`lib/meals.js`](lib/meals.js), structured similarly to
 [`lib/runs.js`](lib/runs.js).
 
+A 'User' needs to have:
+
+- a name (`name`)
+- a date-of-birth (`bornOn`)
+- a target daily calorie intake (`calorieTarget`)
+- a list of 'Meals' that they've eaten (`meals`)
+
+Every 'Meal' must have:
+
+- a title (`title`), e.g. 'breakfast', 'lunch', 'dinner'
+- a date (`date`), represented as a string e.g. '2016-06-25'
+- a description (`description`)
+- a number of estimated calories (`calories`)
+
+Then, create the following methods for your instance of a 'User':
+
+- `caloriesEatenOn`, which accepts a date (in the format above) and calculates
+    the total number of calories consumed on that date.
+- `avgDailyCalories`, which (as indicated), calculates the average number of
+    calories consumed per day, rounded down to the nearest whole calorie.
+- `onTrack`, which compares averageDailyCalories to the User's target daily
+    calorie intake, and returns `true` if average caloric intake is at or below
+    the target (or `false` if the reverse is true).
+
 ## Additional Resources
 
--   [MDN this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
--   [Understand Javascript's `this` with Clarity](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/)
--   [This in Javascript](https://john-dugan.com/this-in-javascript/)
+- [MDN `this`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+- [Understand JavaScript's `this` with Clarity](http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/)
+- [`this` in JavaScript](https://john-dugan.com/this-in-javascript/)
 
 ## [License](LICENSE)
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+1. All software code is licensed under GNU GPLv3. For commercial use or
     alternative licensing, please contact legal@ga.co.
