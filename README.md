@@ -79,8 +79,8 @@ record of their run which contains:
 - the time taken, in seconds
 
 The program also stores information about the user (the user's name and email
-address) and can perform some calculations (total distance run, longest run
-so far, and average speed).
+address) and can perform some calculations (total distance run, longest distance
+run so far, and average speed).
 
 ## Lab: Diagram and Model
 
@@ -113,15 +113,15 @@ const user = {
   ],
 
   totalDistance : function () {},
-  longestRun : function () {},
+  longestRunDistance : function () {},
   averageSpeed : function () {}
 }
 ```
 
 When we start thinking about how the methods for 'User' will work, we run into a
-difficulty. A method for calculating the longest run so far needs to be able to
-see, and refer to, all of the runs associated with that particular user. How do
-we do that?
+difficulty. A method for calculating the longest distance run so far needs to be
+able to see, and refer to, all of the runs associated with that particular user.
+How do we do that?
 
 Follow along as I demonstrate how to complete writing each method.
 

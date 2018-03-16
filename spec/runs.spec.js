@@ -12,9 +12,9 @@ describe('runs', function () {
     })
   })
 
-  describe('longest run', function () {
+  describe('longest distance run', function () {
     it('has the correct length', function () {
-      expect(runs.longestRun()).to.equal(1400)
+      expect(runs.longestRunDistance()).to.equal(1400)
     })
   })
 
