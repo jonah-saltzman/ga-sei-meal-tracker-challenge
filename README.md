@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-- [js-objects-modeling](https://git.generalassemb.ly/ga-wdi-boston/js-objects-modeling)
+- [js-object-modeling](https://git.generalassemb.ly/ga-wdi-boston/js-object-modeling)
 
 ## Objectives
 
