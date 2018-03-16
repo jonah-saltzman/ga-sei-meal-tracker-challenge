@@ -8,8 +8,8 @@
 
 ## Objectives
 
-- Contrast the definitions of "property", "attribute", and "method"
-- From within a method, access properties of the same object using `this`.
+- Contrast the definitions of "property", "attribute", and "method".
+- Access properties within a method of the same object using `this`.
 
 ## Preparation
 
