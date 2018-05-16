@@ -27,7 +27,10 @@ describe('meals', function () {
         description: 'Black Bean Burger',
         calories: 800
       }
-    ]
+    ],
+    caloriesEatenOn: meals.caloriesEatenOn,
+    avgDailyCalories: meals.avgDailyCalories,
+    onTrack: meals.onTrack
   }
 
   describe('calories eaten on', function () {

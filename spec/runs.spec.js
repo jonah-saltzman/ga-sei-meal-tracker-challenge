@@ -18,12 +18,15 @@ describe('runs', function () {
         distance: 1700,
         timeTaken: 1200
       }
-    ]
+    ],
+    totalDistance: runs.totalDistance,
+    longestRunDistance: runs.longestRunDistance,
+    averageSpeed: runs.averageSpeed
   }
 
   describe('total distance', function () {
     it('has the correct length', function () {
-      expect(runs.totalDistance.call(testUser)).to.equal(400)
+      expect(runs.totalDistance.call(testUser)).to.equal(4000)
     })
   })
 
