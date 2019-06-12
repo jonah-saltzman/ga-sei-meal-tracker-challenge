@@ -8,7 +8,7 @@
 
 ## Objectives
 
-- Contrast the definitions of "property" and "method".
+- Contrast the definitions of "property", "attribute", and "method".
 - Access properties within a method of the same object using `this`.
 
 ## Preparation
@@ -97,7 +97,10 @@ Using the description of the program above, create an entity diagram.
 When we start thinking about how the methods for 'User' will work, we run into a
 difficulty. A method for calculating the longest distance run so far needs to be
 able to access, and refer to, all of the runs associated with that particular
-user. How do we do that?
+user. We will use `this` to make that connection.
+
+> average = totalSum / totalCount
+> speed = totalDist / totalTime
 
 Watch as I demonstrate how to complete writing each method.
 
