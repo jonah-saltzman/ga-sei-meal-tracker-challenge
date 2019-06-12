@@ -38,7 +38,7 @@ and methods, we should prefer the term "object" over "dictionary". So, we'll
 also call the accessor name a "property" instead of a "key".
 
 `foo` is a data item, referred to as a _property_. On the other hand, `baz`
-points to a function that can be invoked, and is known as a _method_. 
+points to a function that can be invoked, and is known as a _method_.
 
 For the remainder of this talk, we will be focusing exclusively on how we can
 use `this` inside of a method to point to value defined elsewhere in an object
@@ -97,7 +97,10 @@ Using the description of the program above, create an entity diagram.
 When we start thinking about how the methods for 'User' will work, we run into a
 difficulty. A method for calculating the longest distance run so far needs to be
 able to access, and refer to, all of the runs associated with that particular
-user. How do we do that?
+user. We will use `this` to make that connection.
+
+> average = totalSum / totalCount
+> speed = totalDist / totalTime
 
 Watch as I demonstrate how to complete writing each method.
 
