@@ -8,7 +8,7 @@
 
 ## Objectives
 
-- Contrast the definitions of "property", "attribute", and "method".
+- Contrast the definitions of "property" and "method".
 - Access properties within a method of the same object using `this`.
 
 ## Preparation
