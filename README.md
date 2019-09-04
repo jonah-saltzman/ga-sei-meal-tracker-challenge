@@ -107,7 +107,7 @@ Watch as I demonstrate how to complete writing each method.
 ```js
 const user = {
   name: 'Christopher Robin',
-  email: 'wdi@christopherRobin.com',
+  email: 'sei@christopherRobin.com',
   runs: [
     {
       date: '2017-05-25 15:00',
