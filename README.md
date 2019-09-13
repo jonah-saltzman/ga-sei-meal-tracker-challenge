@@ -99,15 +99,14 @@ difficulty. A method for calculating the longest distance run so far needs to be
 able to access, and refer to, all of the runs associated with that particular
 user. We will use `this` to make that connection.
 
-> average = totalSum / totalCount
-> speed = totalDist / totalTime
+> avgSpeed = totalDist / totalTime
 
 Watch as I demonstrate how to complete writing each method.
 
 ```js
 const user = {
   name: 'Christopher Robin',
-  email: 'wdi@christopherRobin.com',
+  email: 'sei@christopherRobin.com',
   runs: [
     {
       date: '2017-05-25 15:00',
